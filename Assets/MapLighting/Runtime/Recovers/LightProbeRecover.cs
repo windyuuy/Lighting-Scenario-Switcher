@@ -11,13 +11,13 @@ namespace MapLighting
 	[System.Serializable]
 	public class LightProbeRecover
 	{
-		[System.Serializable]
-		public class LightProbeData
-		{
-			public float[] coefficients = new float[27];
-		}
-
-		public LightProbeData[] data;
+		// [System.Serializable]
+		// public class LightProbeData
+		// {
+		// 	public float[] coefficients = new float[27];
+		// }
+		//
+		// public LightProbeData[] data;
 		
 		public void Recover()
 		{
@@ -63,10 +63,14 @@ namespace MapLighting
 			// this.data = newSphericalHarmonicsModelList.ToArray ();
 		}
 
+		public LightProbes lightProbes;
 		public async Task Load(string saveUrl)
 		{
-			var asset=await Addressables.LoadAssetAsync<LightProbes>(saveUrl + "LightProbe.asset").Task;
-			LightmapSettings.lightProbes = asset;
+			if (lightProbes==null && saveUrl != null)
+			{
+				var asset=await Addressables.LoadAssetAsync<LightProbes>(saveUrl + "LightProbe.asset").Task;
+				LightmapSettings.lightProbes = asset;
+			}
 		}
 		
 		#if UNITY_EDITOR
@@ -76,7 +80,8 @@ namespace MapLighting
 			AssetDatabase.DeleteAsset(savePath);
 			if (LightmapSettings.lightProbes != null)
 			{
-				AssetDatabase.CreateAsset(GameObject.Instantiate(LightmapSettings.lightProbes),savePath);
+				lightProbes = GameObject.Instantiate(LightmapSettings.lightProbes);
+				AssetDatabase.CreateAsset(lightProbes,savePath);
 			}
 		}
 		#endif

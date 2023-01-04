@@ -17,12 +17,12 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: dac2810f22fe8bf43a43e541217f46f7
   m_SerializeEntries:
-  - m_GUID: 9e144b312ad6fa94d8e9f40676f7444d
-    m_Address: Assets/Bundles/SS3/LightMapData.asset
+  - m_GUID: e927e0bfcbfd1004f8f9a76108d5d72b
+    m_Address: Assets/Example_Simple/Example2/LightMapData.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 54cf6dc6397d97f4298e3585d79ae02f
-    m_Address: Assets/Bundles/SS3/LightProbe.asset
+  - m_GUID: a7f700b4eb6673e4aa72cd0812e8d357
+    m_Address: Assets/Example_Simple/Example2/LightProbe.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0
