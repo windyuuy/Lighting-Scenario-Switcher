@@ -1,9 +1,10 @@
 using System;
+using UnityEngine;
 
 namespace MapLighting
 {
 	[Serializable]
-	public class LightmapDataBase
+	public class LightmapDataBase:ScriptableObject
 	{
 		public Recoverable<LightRecover>[] lightDatas;
 		public Recoverable<LensFlareRecover>[] lensFlareDatas;
@@ -11,6 +12,7 @@ namespace MapLighting
 		public Recoverable<RendererRecorver>[] rendererDatas;
 		public LightProbeRecover lightProbeData;
 		public LightMapRecover lightmapData;
+		public RenderSettingsRecover renderSettingsesData;
 		[NonSerialized]
 		public BaseLightMapData baseLightMapData;
 	}

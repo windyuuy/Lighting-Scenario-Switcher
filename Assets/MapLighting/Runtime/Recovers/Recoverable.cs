@@ -1,5 +1,4 @@
 using System;
-using System.Text;
 using UnityEngine;
 
 namespace MapLighting
@@ -24,23 +23,9 @@ namespace MapLighting
 			recover0 = recover;
 		}
 		
-		public static string GetObjPath(Transform comp)
-		{
-			var strBuilder = new StringBuilder();
-			var comp0 = comp;
-			while(comp0.parent!=null)
-			{
-				strBuilder.Insert(0, comp0.gameObject.name);
-				strBuilder.Insert(0, "/");
-				comp0 = comp0.parent;
-			}
-			strBuilder.Insert(0, comp0.gameObject.name);
-
-			return strBuilder.ToString();
-		}
 		public Recoverable(Component comp, T recover0)
 		{
-			var path0 = GetObjPath(comp.transform);
+			var path0 = RecoverTool.GetObjPath(comp.transform);
 			this.path = path0;
 			this.recover = recover0;
 		}

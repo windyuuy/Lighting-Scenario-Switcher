@@ -1,14 +1,17 @@
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace MapLighting
 {
 	[System.Serializable]
-	public class LightmapDataCollecter : LightmapDataBase
+	public class LightmapDataCollecter : LightmapDataRecover
 	{
+		#if UNITY_EDITOR
 		public async Task DoPostSavedTask()
 		{
 			await lightmapData.DoPostTask();
@@ -18,6 +21,9 @@ namespace MapLighting
 			baseLightMapData = new();
 			baseLightMapData.Collect();
 
+			renderSettingsesData = new();
+			renderSettingsesData.Collect();
+			
 			// 收集光照设置
 			var lightParams = GameObject.FindObjectsOfType<Light>();
 			var lightDatas0 = lightParams.Select(light =>
@@ -69,17 +75,27 @@ namespace MapLighting
 			this.lightProbeData = lightProbeData0;
 			this.lightmapData = lightmapData0;
 		}
-
+		#endif
+		
 		public async Task Save(string saveDir)
 		{
+#if UNITY_EDITOR
 			if (!Directory.Exists(saveDir))
 			{
 				Directory.CreateDirectory(saveDir);
 			}
-			await lightmapData.Save(saveDir, baseLightMapData, true);
-			var str = JsonUtility.ToJson(this);
-			var savePath = saveDir + "LightMapData.json";
-			await File.WriteAllTextAsync(savePath, str);
+			var savePath = saveDir + "LightMapData.asset";
+			var task1=lightmapData.Save(saveDir, baseLightMapData, true);
+			await Task.WhenAll(Enumerable.Empty<Task>()
+				.Append(task1)
+				// .Append(task2)
+			);
+			lightProbeData.Save(saveDir);
+			AssetDatabase.DeleteAsset(savePath);
+			AssetDatabase.CreateAsset(this, savePath);
+#else
+			throw new System.Exception("save valid only for editor");
+#endif
 		}
 	}
 }
