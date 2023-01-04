@@ -1,0 +1,2459 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!258 &25800000
+LightProbes:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LightProbe
+  m_Data:
+    m_Tetrahedralization:
+      m_Tetrahedra:
+      - indices[0]: 17
+        indices[1]: 8
+        indices[2]: 19
+        indices[3]: 16
+        neighbors[0]: 46
+        neighbors[1]: 26
+        neighbors[2]: 8
+        neighbors[3]: 48
+        matrix:
+          e00: 0.3649635
+          e01: 0.0029517352
+          e02: 0.5263158
+          e03: 0
+          e10: 0
+          e11: 0.3861004
+          e12: 0
+          e13: 0
+          e20: -0
+          e21: -0.40032515
+          e22: -0.5263158
+          e23: 0
+        isValid: 1
+      - indices[0]: 7
+        indices[1]: 8
+        indices[2]: 3
+        indices[3]: 5
+        neighbors[0]: 22
+        neighbors[1]: 56
+        neighbors[2]: 55
+        neighbors[3]: 17
+        matrix:
+          e00: -0
+          e01: 0.6348541
+          e02: -1.3159558
+          e03: 0
+          e10: -0.36630037
+          e11: -0.45817974
+          e12: 1.1268224
+          e13: 0
+          e20: 0
+          e21: -0.8955226
+          e22: 1.1940302
+          e23: 0
+        isValid: 1
+      - indices[0]: 8
+        indices[1]: 11
+        indices[2]: 7
+        indices[3]: 10
+        neighbors[0]: 15
+        neighbors[1]: 5
+        neighbors[2]: 25
+        neighbors[3]: 57
+        matrix:
+          e00: 0.0000000079261495
+          e01: 0.42608598
+          e02: -0.09863102
+          e03: 0
+          e10: -0.36496356
+          e11: 0.8240514
+          e12: -1.0524721
+          e13: 0
+          e20: 0.36496353
+          e21: -0.4098011
+          e22: 0.030654881
+          e23: 0
+        isValid: 1
+      - indices[0]: 7
+        indices[1]: 18
+        indices[2]: 6
+        indices[3]: 10
+        neighbors[0]: 24
+        neighbors[1]: 5
+        neighbors[2]: 15
+        neighbors[3]: 30
+        matrix:
+          e00: 0
+          e01: -4
+          e02: 0
+          e03: 0
+          e10: 0
+          e11: -3.8571432
+          e12: 0.89285725
+          e13: 0
+          e20: 0.3649635
+          e21: 3.7226276
+          e22: 0
+          e23: 0
+        isValid: 1
+      - indices[0]: 17
+        indices[1]: 9
+        indices[2]: 16
+        indices[3]: 14
+        neighbors[0]: 38
+        neighbors[1]: 34
+        neighbors[2]: 37
+        neighbors[3]: 8
+        matrix:
+          e00: 0.3649635
+          e01: -0.40046582
+          e02: 0
+          e03: 0
+          e10: 0
+          e11: 0.38910508
+          e12: 0
+          e13: 0
+          e20: -0.3649635
+          e21: 0.34487936
+          e22: -0.7518797
+          e23: 0
+        isValid: 1
+      - indices[0]: 6
+        indices[1]: 8
+        indices[2]: 7
+        indices[3]: 10
+        neighbors[0]: 2
+        neighbors[1]: 3
+        neighbors[2]: 24
+        neighbors[3]: 17
+        matrix:
+          e00: 0.3649635
+          e01: -0.82405126
+          e02: 1.0524722
+          e03: 0
+          e10: 0
+          e11: 0.42608598
+          e12: -0.098631024
+          e13: 0
+          e20: -0
+          e21: 0.41425025
+          e22: -1.0218173
+          e23: 0
+        isValid: 1
+      - indices[0]: 17
+        indices[1]: 2
+        indices[2]: 19
+        indices[3]: 0
+        neighbors[0]: 52
+        neighbors[1]: 48
+        neighbors[2]: 35
+        neighbors[3]: 26
+        matrix:
+          e00: -0.51371264
+          e01: 0.7782118
+          e02: 0.5263158
+          e03: 0
+          e10: 0.22190249
+          e11: -0.7583702
+          e12: 0
+          e13: 0
+          e20: 0.11867741
+          e21: -0.52704734
+          e22: -0.5263158
+          e23: 0
+        isValid: 1
+      - indices[0]: 2
+        indices[1]: 18
+        indices[2]: 11
+        indices[3]: 16
+        neighbors[0]: 12
+        neighbors[1]: 39
+        neighbors[2]: 16
+        neighbors[3]: 41
+        matrix:
+          e00: 0.18658112
+          e01: -0.14180152
+          e02: 0
+          e03: 0
+          e10: 1.2593243
+          e11: 7.674493
+          e12: -0.5263158
+          e13: 0
+          e20: -0.5298904
+          e21: -3.5972836
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 8
+        indices[1]: 16
+        indices[2]: 17
+        indices[3]: 9
+        neighbors[0]: 4
+        neighbors[1]: 49
+        neighbors[2]: 42
+        neighbors[3]: 0
+        matrix:
+          e00: 0.000000009582741
+          e01: 0.14222445
+          e02: -0.3206288
+          e03: 0
+          e10: -0.36496353
+          e11: 0.011328406
+          e12: 0.00007285142
+          e13: 0
+          e20: 0.3649635
+          e21: -0.39932668
+          e22: -0.002568015
+          e23: 0
+        isValid: 1
+      - indices[0]: 13
+        indices[1]: 18
+        indices[2]: 11
+        indices[3]: 10
+        neighbors[0]: 15
+        neighbors[1]: 25
+        neighbors[2]: 19
+        neighbors[3]: 12
+        matrix:
+          e00: -0.38633934
+          e01: 0.2936176
+          e02: 0
+          e03: 0
+          e10: -3.4973366
+          e11: -1.1991696
+          e12: 0.89285725
+          e13: 0
+          e20: -4.0024753
+          e21: -0.9581217
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 7
+        indices[1]: 19
+        indices[2]: 3
+        indices[3]: 6
+        neighbors[0]: 11
+        neighbors[1]: 17
+        neighbors[2]: 30
+        neighbors[3]: 43
+        matrix:
+          e00: -0.86733055
+          e01: -3.3408284
+          e02: -0.00000005518949
+          e03: 0
+          e10: -0.6714355
+          e11: -3.3468518
+          e12: 0.8928572
+          e13: 0
+          e20: 0.40154192
+          e21: -0.30517194
+          e22: 0
+          e23: 0
+        isValid: 1
+      - indices[0]: 3
+        indices[1]: 19
+        indices[2]: 1
+        indices[3]: 6
+        neighbors[0]: 14
+        neighbors[1]: 21
+        neighbors[2]: 10
+        neighbors[3]: 51
+        matrix:
+          e00: 0.25474498
+          e01: -0.870612
+          e02: 0
+          e03: 0
+          e10: -0.0046989755
+          e11: -0.77868193
+          e12: 0.89285725
+          e13: 0
+          e20: 0.15116736
+          e21: 0.58227426
+          e22: 0
+          e23: 0
+        isValid: 1
+      - indices[0]: 11
+        indices[1]: 18
+        indices[2]: 13
+        indices[3]: 16
+        neighbors[0]: 27
+        neighbors[1]: 18
+        neighbors[2]: 7
+        neighbors[3]: 9
+        matrix:
+          e00: -4.0024753
+          e01: -0.9581218
+          e02: -0.000000014537719
+          e03: 0
+          e10: 9.037494
+          e11: 1.763091
+          e12: -0.5263158
+          e13: 0
+          e20: -0.3863393
+          e21: 0.2936176
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 1
+        indices[1]: 5
+        indices[2]: 8
+        indices[3]: 0
+        neighbors[0]: 29
+        neighbors[1]: 47
+        neighbors[2]: 58
+        neighbors[3]: 23
+        matrix:
+          e00: -0
+          e01: -0.52380955
+          e02: -0.5
+          e03: 0
+          e10: 0.36630037
+          e11: 0.6606489
+          e12: 0
+          e13: 0
+          e20: -0.36630037
+          e21: -0.06541077
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 1
+        indices[1]: 6
+        indices[2]: 19
+        indices[3]: 8
+        neighbors[0]: 28
+        neighbors[1]: 47
+        neighbors[2]: 23
+        neighbors[3]: 11
+        matrix:
+          e00: 0.32447603
+          e01: -0.010022417
+          e02: 0
+          e03: 0
+          e10: -0.08268502
+          e11: -0.021577314
+          e12: -0.8928573
+          e13: 0
+          e20: -0.12778592
+          e21: -0.35802206
+          e22: 0.89285725
+          e23: 0
+        isValid: 1
+      - indices[0]: 11
+        indices[1]: 18
+        indices[2]: 7
+        indices[3]: 10
+        neighbors[0]: 3
+        neighbors[1]: 2
+        neighbors[2]: 9
+        neighbors[3]: 41
+        matrix:
+          e00: -0.36496353
+          e01: -3.7226276
+          e02: -0.00000005518949
+          e03: 0
+          e10: -0
+          e11: -3.857143
+          e12: 0.8928572
+          e13: 0
+          e20: 0.36496353
+          e21: -0.27737203
+          e22: -0.0000000054383804
+          e23: 0
+        isValid: 1
+      - indices[0]: 18
+        indices[1]: 2
+        indices[2]: 19
+        indices[3]: 16
+        neighbors[0]: 26
+        neighbors[1]: 46
+        neighbors[2]: 7
+        neighbors[3]: 44
+        matrix:
+          e00: -0.3649635
+          e01: -3.3523612
+          e02: -0.5263158
+          e03: 0
+          e10: 0
+          e11: -1.4084506
+          e12: 0
+          e13: 0
+          e20: 0.3649635
+          e21: 2.4776392
+          e22: 0
+          e23: 0
+        isValid: 1
+      - indices[0]: 7
+        indices[1]: 6
+        indices[2]: 3
+        indices[3]: 8
+        neighbors[0]: 22
+        neighbors[1]: 1
+        neighbors[2]: 5
+        neighbors[3]: 10
+        matrix:
+          e00: -0.11502756
+          e01: 0.40911764
+          e02: -1.0003928
+          e03: 0
+          e10: -0.43816915
+          e11: -0.85988766
+          e12: 1.2020594
+          e13: 0
+          e20: 0.46694452
+          e21: 0.020835409
+          e22: -0.086970694
+          e23: 0
+        isValid: 1
+      - indices[0]: 12
+        indices[1]: 11
+        indices[2]: 13
+        indices[3]: 16
+        neighbors[0]: 12
+        neighbors[1]: 31
+        neighbors[2]: 45
+        neighbors[3]: 59
+        matrix:
+          e00: -5.404863
+          e01: -1.0544145
+          e02: 0.31476253
+          e03: 0
+          e10: -3.8989046
+          e11: -0.9379165
+          e12: -0.00603167
+          e13: 0
+          e20: 4.9867845
+          e21: 1.3418401
+          e22: -0.31291416
+          e23: 0
+        isValid: 1
+      - indices[0]: 8
+        indices[1]: 18
+        indices[2]: 13
+        indices[3]: 10
+        neighbors[0]: 9
+        neighbors[1]: 25
+        neighbors[2]: 24
+        neighbors[3]: 27
+        matrix:
+          e00: 0.29069766
+          e01: 0.06958787
+          e02: 0
+          e03: 0
+          e10: -0.00000002660922
+          e11: -0.3619691
+          e12: 0.89285725
+          e13: 0
+          e20: -0.29069766
+          e21: 0.31651253
+          e22: 0
+          e23: 0
+        isValid: 1
+      - indices[0]: 17
+        indices[1]: 14
+        indices[2]: 2
+        indices[3]: 15
+        neighbors[0]: 60
+        neighbors[1]: 35
+        neighbors[2]: 37
+        neighbors[3]: 34
+        matrix:
+          e00: -0
+          e01: 0.15884791
+          e02: -0.7518797
+          e03: 0
+          e10: -0.3649635
+          e11: -1.0691887
+          e12: -0
+          e13: 0
+          e20: -0
+          e21: -1.4084506
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 3
+        indices[1]: 6
+        indices[2]: 1
+        indices[3]: 5
+        neighbors[0]: 23
+        neighbors[1]: 61
+        neighbors[2]: 22
+        neighbors[3]: 11
+        matrix:
+          e00: 0.26136467
+          e01: 0.22636048
+          e02: -1.2578175
+          e03: 0
+          e10: -0.4085196
+          e11: -0.14372312
+          e12: 0.49541235
+          e13: 0
+          e20: 0.14285378
+          e21: -0.7953961
+          e22: 1.5796732
+          e23: 0
+        isValid: 1
+      - indices[0]: 3
+        indices[1]: 8
+        indices[2]: 6
+        indices[3]: 5
+        neighbors[0]: 23
+        neighbors[1]: 21
+        neighbors[2]: 1
+        neighbors[3]: 17
+        matrix:
+          e00: -0
+          e01: 1.6816138
+          e02: -4.1479807
+          e03: 0
+          e10: -0.36630037
+          e11: 2.039525
+          e12: -4.0505395
+          e13: 0
+          e20: 0
+          e21: -2.418321
+          e22: 5.0128107
+          e23: 0
+        isValid: 1
+      - indices[0]: 6
+        indices[1]: 8
+        indices[2]: 1
+        indices[3]: 5
+        neighbors[0]: 13
+        neighbors[1]: 21
+        neighbors[2]: 22
+        neighbors[3]: 14
+        matrix:
+          e00: -0.000000042423235
+          e01: 0.21008404
+          e02: -1.4705882
+          e03: 0
+          e10: -0.3663003
+          e11: -0.31724226
+          e12: 1.7628205
+          e13: 0
+          e20: 0.00000006756654
+          e21: -0.9191177
+          e22: 2.2671568
+          e23: 0
+        isValid: 1
+      - indices[0]: 6
+        indices[1]: 18
+        indices[2]: 8
+        indices[3]: 10
+        neighbors[0]: 19
+        neighbors[1]: 5
+        neighbors[2]: 3
+        neighbors[3]: 28
+        matrix:
+          e00: 0.3649635
+          e01: -0.3973734
+          e02: 0
+          e03: 0
+          e10: 0
+          e11: -0.36196914
+          e12: 0.89285725
+          e13: 0
+          e20: 0
+          e21: 0.3861004
+          e22: 0
+          e23: 0
+        isValid: 1
+      - indices[0]: 13
+        indices[1]: 11
+        indices[2]: 8
+        indices[3]: 10
+        neighbors[0]: 2
+        neighbors[1]: 19
+        neighbors[2]: 9
+        neighbors[3]: 62
+        matrix:
+          e00: -0.29069766
+          e01: 0.3264113
+          e02: -0.024416981
+          e03: 0
+          e10: -0
+          e11: 0.41425025
+          e12: -1.0218173
+          e13: 0
+          e20: 0.29069766
+          e21: 0.09967464
+          e22: -0.07421404
+          e23: 0
+        isValid: 1
+      - indices[0]: 19
+        indices[1]: 2
+        indices[2]: 17
+        indices[3]: 16
+        neighbors[0]: 34
+        neighbors[1]: 0
+        neighbors[2]: 16
+        neighbors[3]: 6
+        matrix:
+          e00: -0.0000000014318395
+          e01: -0.8747216
+          e02: -0.52631587
+          e03: 0
+          e10: 0.00000001318006
+          e11: -1.4084506
+          e12: 0.00000001318006
+          e13: 0
+          e20: 0.36496347
+          e21: 3.352361
+          e22: 0.5263158
+          e23: 0
+        isValid: 1
+      - indices[0]: 13
+        indices[1]: 18
+        indices[2]: 8
+        indices[3]: 16
+        neighbors[0]: 46
+        neighbors[1]: 31
+        neighbors[2]: 12
+        neighbors[3]: 19
+        matrix:
+          e00: -0.29069766
+          e01: 0.31651253
+          e02: 0
+          e03: 0
+          e10: -0
+          e11: -0.40032515
+          e12: -0.5263158
+          e13: 0
+          e20: 0.29069766
+          e21: 0.06958787
+          e22: 0
+          e23: 0
+        isValid: 1
+      - indices[0]: 19
+        indices[1]: 8
+        indices[2]: 6
+        indices[3]: 18
+        neighbors[0]: 24
+        neighbors[1]: 30
+        neighbors[2]: 46
+        neighbors[3]: 14
+        matrix:
+          e00: 0.3649635
+          e01: -0.37324214
+          e02: 0.8928572
+          e03: 0
+          e10: 0
+          e11: 0.3861004
+          e12: 0
+          e13: 0
+          e20: -0
+          e21: -0.024131276
+          e22: -0.89285725
+          e23: 0
+        isValid: 1
+      - indices[0]: 5
+        indices[1]: 4
+        indices[2]: 8
+        indices[3]: 0
+        neighbors[0]: 50
+        neighbors[1]: 13
+        neighbors[2]: 64
+        neighbors[3]: 63
+        matrix:
+          e00: 0.36630037
+          e01: 0.32599008
+          e02: -0.31944704
+          e03: 0
+          e10: 0
+          e11: 0.33913985
+          e12: 0.3237244
+          e13: 0
+          e20: -0.36630037
+          e21: -0.06585444
+          e22: -0.00042349866
+          e23: 0
+        isValid: 1
+      - indices[0]: 19
+        indices[1]: 6
+        indices[2]: 7
+        indices[3]: 18
+        neighbors[0]: 3
+        neighbors[1]: 44
+        neighbors[2]: 28
+        neighbors[3]: 10
+        matrix:
+          e00: 0.3649635
+          e01: -4.1345153
+          e02: 0.8928572
+          e03: 0
+          e10: -0
+          e11: 7.857143
+          e12: -0.89285725
+          e13: 0
+          e20: -0
+          e21: -4
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 13
+        indices[1]: 8
+        indices[2]: 12
+        indices[3]: 16
+        neighbors[0]: 42
+        neighbors[1]: 18
+        neighbors[2]: 27
+        neighbors[3]: 65
+        matrix:
+          e00: -0.29069766
+          e01: 0.07229452
+          e02: -0.3210785
+          e03: 0
+          e10: 0.29069766
+          e11: 0.06992993
+          e12: 0.0004497081
+          e13: 0
+          e20: 0
+          e21: 0.24577382
+          e22: 0.32312396
+          e23: 0
+        isValid: 1
+      - indices[0]: 17
+        indices[1]: 0
+        indices[2]: 9
+        indices[3]: 15
+        neighbors[0]: 33
+        neighbors[1]: 37
+        neighbors[2]: 35
+        neighbors[3]: 49
+        matrix:
+          e00: -0.35932136
+          e01: -0.044401366
+          e02: -0.7518797
+          e03: 0
+          e10: 0.32449904
+          e11: -0.010101128
+          e12: 0
+          e13: 0
+          e20: -0.11490044
+          e21: 0.39268175
+          e22: 0
+          e23: 0
+        isValid: 1
+      - indices[0]: 9
+        indices[1]: 0
+        indices[2]: 4
+        indices[3]: 15
+        neighbors[0]: 36
+        neighbors[1]: 66
+        neighbors[2]: 32
+        neighbors[3]: 50
+        matrix:
+          e00: -0.3663004
+          e01: 0.36161622
+          e02: -0.5260542
+          e03: 0
+          e10: 0
+          e11: -0.050199494
+          e12: -0.679014
+          e13: 0
+          e20: 0.36630037
+          e21: 0.04526376
+          e22: 0.76648325
+          e23: 0
+        isValid: 1
+      - indices[0]: 17
+        indices[1]: 16
+        indices[2]: 2
+        indices[3]: 14
+        neighbors[0]: 39
+        neighbors[1]: 20
+        neighbors[2]: 4
+        neighbors[3]: 26
+        matrix:
+          e00: 0.3649635
+          e01: 2.4776392
+          e02: 0
+          e03: 0
+          e10: -0.3649635
+          e11: -2.3187914
+          e12: -0.7518797
+          e13: 0
+          e20: -0
+          e21: -1.4084506
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 2
+        indices[1]: 0
+        indices[2]: 17
+        indices[3]: 15
+        neighbors[0]: 32
+        neighbors[1]: 20
+        neighbors[2]: 36
+        neighbors[3]: 6
+        matrix:
+          e00: 0.2219025
+          e01: -0.7583701
+          e02: 0
+          e03: 0
+          e10: 0.17313273
+          e11: 0.5072057
+          e12: 0
+          e13: 0
+          e20: -0.22549611
+          e21: -0.5017603
+          e22: -0.7518797
+          e23: 0
+        isValid: 1
+      - indices[0]: 4
+        indices[1]: 0
+        indices[2]: 2
+        indices[3]: 15
+        neighbors[0]: 35
+        neighbors[1]: 68
+        neighbors[2]: 33
+        neighbors[3]: 67
+        matrix:
+          e00: 0.12666108
+          e01: 0.28183857
+          e02: 0.4223305
+          e03: 0
+          e10: -0.053593352
+          e11: 0.0027085552
+          e12: -0.75598085
+          e13: 0
+          e20: 0.38978738
+          e21: -0.3848029
+          e22: 0.5597845
+          e23: 0
+        isValid: 1
+      - indices[0]: 9
+        indices[1]: 14
+        indices[2]: 17
+        indices[3]: 15
+        neighbors[0]: 20
+        neighbors[1]: 32
+        neighbors[2]: 69
+        neighbors[3]: 4
+        matrix:
+          e00: 0
+          e01: 0.38910508
+          e02: 0
+          e03: 0
+          e10: -0.3649635
+          e11: 0.011360722
+          e12: -0
+          e13: 0
+          e20: -0
+          e21: -0.055586457
+          e22: -0.7518797
+          e23: 0
+        isValid: 1
+      - indices[0]: 16
+        indices[1]: 9
+        indices[2]: 12
+        indices[3]: 14
+        neighbors[0]: 70
+        neighbors[1]: 45
+        neighbors[2]: 4
+        neighbors[3]: 42
+        matrix:
+          e00: -0
+          e01: -0.055586457
+          e02: -0.7518797
+          e03: 0
+          e10: 0.29069766
+          e11: 0.07012942
+          e12: 0
+          e13: 0
+          e20: -0.29069766
+          e21: 0.31897566
+          e22: 0
+          e23: 0
+        isValid: 1
+      - indices[0]: 2
+        indices[1]: 16
+        indices[2]: 11
+        indices[3]: 14
+        neighbors[0]: 45
+        neighbors[1]: 71
+        neighbors[2]: 34
+        neighbors[3]: 7
+        matrix:
+          e00: 0.18658112
+          e01: -0.14180152
+          e02: 0
+          e03: 0
+          e10: 2.1423442
+          e11: 14.702646
+          e12: -0.7518797
+          e13: 0
+          e20: -0.5298904
+          e21: -3.5972836
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 7
+        indices[1]: 11
+        indices[2]: 3
+        indices[3]: 2
+        neighbors[0]: 73
+        neighbors[1]: 43
+        neighbors[2]: 41
+        neighbors[3]: 72
+        matrix:
+          e00: 0.36496353
+          e01: 6.8384075
+          e02: 0.24946977
+          e03: 0
+          e10: -0.36496353
+          e11: -3.0984404
+          e12: -0.11303321
+          e13: 0
+          e20: -0
+          e21: -4.2375593
+          e22: -0.36918133
+          e23: 0
+        isValid: 1
+      - indices[0]: 7
+        indices[1]: 18
+        indices[2]: 11
+        indices[3]: 2
+        neighbors[0]: 7
+        neighbors[1]: 40
+        neighbors[2]: 44
+        neighbors[3]: 15
+        matrix:
+          e00: 0.36496356
+          e01: 1.5679656
+          e02: -0.20969756
+          e03: 0
+          e10: 0.000000034100395
+          e11: 2.2641506
+          e12: 0.19725558
+          e13: 0
+          e20: -0.36496356
+          e21: -2.8887203
+          e22: -0.094762154
+          e23: 0
+        isValid: 1
+      - indices[0]: 12
+        indices[1]: 16
+        indices[2]: 8
+        indices[3]: 9
+        neighbors[0]: 8
+        neighbors[1]: 74
+        neighbors[2]: 38
+        neighbors[3]: 31
+        matrix:
+          e00: -0.29069766
+          e01: 0.31806833
+          e02: 0.0020454538
+          e03: 0
+          e10: -0
+          e11: -0.38799825
+          e12: -0.0024951636
+          e13: 0
+          e20: -0
+          e21: 0.14222445
+          e22: -0.3206288
+          e23: 0
+        isValid: 1
+      - indices[0]: 3
+        indices[1]: 19
+        indices[2]: 7
+        indices[3]: 2
+        neighbors[0]: 44
+        neighbors[1]: 40
+        neighbors[2]: 52
+        neighbors[3]: 10
+        matrix:
+          e00: 0.6251558
+          e01: 1.0698417
+          e02: -0.17556372
+          e03: 0
+          e10: 0.3340241
+          e11: 2.8357732
+          e12: 0.10345094
+          e13: 0
+          e20: -0.7465948
+          e21: -2.5984175
+          e22: -0.094792046
+          e23: 0
+        isValid: 1
+      - indices[0]: 19
+        indices[1]: 18
+        indices[2]: 7
+        indices[3]: 2
+        neighbors[0]: 41
+        neighbors[1]: 43
+        neighbors[2]: 16
+        neighbors[3]: 30
+        matrix:
+          e00: 0.36496353
+          e01: 2.8887203
+          e02: 0.0947621
+          e03: 0
+          e10: -0.36496353
+          e11: -0.6245696
+          e12: 0.10249343
+          e13: 0
+          e20: -0
+          e21: -1.3207546
+          e22: -0.3044597
+          e23: 0
+        isValid: 1
+      - indices[0]: 16
+        indices[1]: 12
+        indices[2]: 11
+        indices[3]: 14
+        neighbors[0]: 54
+        neighbors[1]: 39
+        neighbors[2]: 38
+        neighbors[3]: 18
+        matrix:
+          e00: 16.366047
+          e01: 3.8926437
+          e02: -0.7518797
+          e03: 0
+          e10: -0.38862148
+          e11: 0.295352
+          e12: 0
+          e13: 0
+          e20: -3.9950285
+          e21: -0.9637814
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 8
+        indices[1]: 18
+        indices[2]: 19
+        indices[3]: 16
+        neighbors[0]: 16
+        neighbors[1]: 0
+        neighbors[2]: 27
+        neighbors[3]: 28
+        matrix:
+          e00: 0
+          e01: 0.3861004
+          e02: 0
+          e03: 0
+          e10: -0.3649635
+          e11: -0.0029517622
+          e12: -0.5263158
+          e13: 0
+          e20: 0.3649635
+          e21: -0.3973734
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 1
+        indices[1]: 8
+        indices[2]: 19
+        indices[3]: 0
+        neighbors[0]: 48
+        neighbors[1]: 51
+        neighbors[2]: 13
+        neighbors[3]: 14
+        matrix:
+          e00: 0.27817243
+          e01: -0.022105664
+          e02: -0.5
+          e03: 0
+          e10: -0.11400506
+          e11: 0.3896218
+          e12: -0
+          e13: 0
+          e20: -0.21047096
+          e21: -0.3795994
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 19
+        indices[1]: 8
+        indices[2]: 17
+        indices[3]: 0
+        neighbors[0]: 49
+        neighbors[1]: 6
+        neighbors[2]: 47
+        neighbors[3]: 0
+        matrix:
+          e00: 0.082342155
+          e01: -0.40286854
+          e02: -0.5263158
+          e03: 0
+          e10: -0.11400508
+          e11: 0.3896218
+          e12: 0
+          e13: 0
+          e20: -0.2928131
+          e21: 0.023269154
+          e22: 0.5263158
+          e23: 0
+        isValid: 1
+      - indices[0]: 8
+        indices[1]: 9
+        indices[2]: 17
+        indices[3]: 0
+        neighbors[0]: 32
+        neighbors[1]: 48
+        neighbors[2]: 50
+        neighbors[3]: 8
+        matrix:
+          e00: -0.06384466
+          e01: 0.14420623
+          e02: -0.320616
+          e03: 0
+          e10: -0.05055434
+          e11: 0.24734303
+          e12: 0.323134
+          e13: 0
+          e20: -0.21008715
+          e21: -0.38147724
+          e22: -0.002453242
+          e23: 0
+        isValid: 1
+      - indices[0]: 8
+        indices[1]: 4
+        indices[2]: 9
+        indices[3]: 0
+        neighbors[0]: 33
+        neighbors[1]: 49
+        neighbors[2]: 29
+        neighbors[3]: 75
+        matrix:
+          e00: -0.000000036884064
+          e01: 0.26013562
+          e02: -0.3198705
+          e03: 0
+          e10: 0.36630037
+          e11: 0.6651299
+          e12: 0.0042773974
+          e13: 0
+          e20: -0.36630034
+          e21: -0.32599005
+          e22: 0.31944698
+          e23: 0
+        isValid: 1
+      - indices[0]: 1
+        indices[1]: 19
+        indices[2]: 3
+        indices[3]: 0
+        neighbors[0]: 52
+        neighbors[1]: 53
+        neighbors[2]: 47
+        neighbors[3]: 11
+        matrix:
+          e00: -0.07351211
+          e01: 1.1798053
+          e02: -0.5
+          e03: 0
+          e10: -0.40591234
+          e11: 0.28833777
+          e12: -0
+          e13: 0
+          e20: 0.25474498
+          e21: -0.870612
+          e22: -0
+          e23: 0
+        isValid: 1
+      - indices[0]: 19
+        indices[1]: 2
+        indices[2]: 3
+        indices[3]: 0
+        neighbors[0]: 53
+        neighbors[1]: 51
+        neighbors[2]: 6
+        neighbors[3]: 43
+        matrix:
+          e00: -0.4044884
+          e01: 0.26548478
+          e02: 0.00968508
+          e03: 0
+          e10: 0.029049687
+          e11: -0.46622178
+          e12: 0.19758417
+          e13: 0
+          e20: 0.22139587
+          e21: -0.3353876
+          e22: -0.22682746
+          e23: 0
+        isValid: 1
+      - indices[0]: 3
+        indices[1]: 2
+        indices[2]: 1
+        indices[3]: 0
+        neighbors[0]: 77
+        neighbors[1]: 51
+        neighbors[2]: 52
+        neighbors[3]: 76
+        matrix:
+          e00: -9.251856
+          e01: 5.882353
+          e02: -0
+          e03: 0
+          e10: 8.280983
+          e11: -5.882354
+          e12: -0
+          e13: 0
+          e20: 20.882067
+          e21: -13.705883
+          e22: -0.5
+          e23: 0
+        isValid: 1
+      - indices[0]: 12
+        indices[1]: 14
+        indices[2]: 11
+        indices[3]: -1
+        neighbors[0]: 71
+        neighbors[1]: 59
+        neighbors[2]: 70
+        neighbors[3]: 45
+        matrix:
+          e00: 1.6997325
+          e01: 0.17915465
+          e02: -0.005408573
+          e03: 13.1076
+          e10: 10.774651
+          e11: 1.6682347
+          e12: -0.20833187
+          e13: 51.34999
+          e20: 15.979256
+          e21: 3.8006458
+          e22: -0.73411
+          e23: 59.826874
+        isValid: 1
+      - indices[0]: 7
+        indices[1]: 5
+        indices[2]: 8
+        indices[3]: -1
+        neighbors[0]: 63
+        neighbors[1]: 57
+        neighbors[2]: 56
+        neighbors[3]: 1
+        matrix:
+          e00: -0.25338188
+          e01: -0.54751444
+          e02: 1.1466641
+          e03: 10.602213
+          e10: -0.9001409
+          e11: -4.7880344
+          e12: 8.626749
+          e13: 37.660187
+          e20: 0
+          e21: -10.565478
+          e22: 14.087304
+          e23: 46.628975
+        isValid: 1
+      - indices[0]: 3
+        indices[1]: 5
+        indices[2]: 7
+        indices[3]: -1
+        neighbors[0]: 55
+        neighbors[1]: 72
+        neighbors[2]: 61
+        neighbors[3]: 1
+        matrix:
+          e00: -0.8346244
+          e01: -0.16046989
+          e02: 1.0156239
+          e03: 9.578531
+          e10: -4.0915246
+          e11: -1.7505867
+          e12: 8.006377
+          e13: 30.61167
+          e20: -4.244549
+          e21: -5.3092117
+          e22: 13.057187
+          e23: 35.31785
+        isValid: 1
+      - indices[0]: 8
+        indices[1]: 11
+        indices[2]: 7
+        indices[3]: -1
+        neighbors[0]: 72
+        neighbors[1]: 55
+        neighbors[2]: 62
+        neighbors[3]: 2
+        matrix:
+          e00: 0.55302954
+          e01: -0.5244385
+          e02: 1.1931894
+          e03: 11.14002
+          e10: 1.5797224
+          e11: -4.769812
+          e12: 8.155978
+          e13: 38.74425
+          e20: 0
+          e21: -9.909662
+          e22: 13.212883
+          e23: 43.734646
+        isValid: 1
+      - indices[0]: 1
+        indices[1]: 0
+        indices[2]: 5
+        indices[3]: -1
+        neighbors[0]: 64
+        neighbors[1]: 61
+        neighbors[2]: 77
+        neighbors[3]: 13
+        matrix:
+          e00: -1.1274983
+          e01: -0.5040886
+          e02: -0.004990385
+          e03: 9.666421
+          e10: -7.21753
+          e11: -2.5896862
+          e12: 0.11882768
+          e13: 28.270437
+          e20: -9.8936205
+          e21: -1.7667177
+          e22: 0
+          e23: 23.122803
+        isValid: 1
+      - indices[0]: 12
+        indices[1]: 11
+        indices[2]: 13
+        indices[3]: -1
+        neighbors[0]: 62
+        neighbors[1]: 65
+        neighbors[2]: 54
+        neighbors[3]: 18
+        matrix:
+          e00: 1.7069675
+          e01: 0.20929842
+          e02: -0.025807898
+          e03: 12.957985
+          e10: 10.525224
+          e11: 1.43758
+          e12: -0.04658786
+          e13: 50.685215
+          e20: 15.48366
+          e21: 2.3331058
+          e22: 0.015003881
+          e23: 60.82629
+        isValid: 1
+      - indices[0]: 14
+        indices[1]: 15
+        indices[2]: 2
+        indices[3]: -1
+        neighbors[0]: 68
+        neighbors[1]: 71
+        neighbors[2]: 69
+        neighbors[3]: 20
+        matrix:
+          e00: 0.047677647
+          e01: 0.6433361
+          e02: -0.9606041
+          e03: 7.8355947
+          e10: 0.32206312
+          e11: 3.4734912
+          e12: -5.654387
+          e13: 15.457967
+          e20: 0
+          e21: 0.74380016
+          e22: -3.520652
+          e23: 8.339978
+        isValid: 1
+      - indices[0]: 1
+        indices[1]: 5
+        indices[2]: 3
+        indices[3]: -1
+        neighbors[0]: 56
+        neighbors[1]: 76
+        neighbors[2]: 58
+        neighbors[3]: 21
+        matrix:
+          e00: -0.64523184
+          e01: -0.2096382
+          e02: 1.1946881
+          e03: 7.762686
+          e10: -3.4831498
+          e11: -1.3787858
+          e12: 5.089906
+          e13: 19.88855
+          e20: -4.0483174
+          e21: -1.4242569
+          e22: 4.9094014
+          e23: 15.5772085
+        isValid: 1
+      - indices[0]: 13
+        indices[1]: 11
+        indices[2]: 8
+        indices[3]: -1
+        neighbors[0]: 57
+        neighbors[1]: 65
+        neighbors[2]: 59
+        neighbors[3]: 25
+        matrix:
+          e00: 0.3443672
+          e01: -0.46315387
+          e02: 1.3167504
+          e03: 11.947658
+          e10: 1.4256538
+          e11: -5.032263
+          e12: 10.171664
+          e13: 46.315636
+          e20: 0
+          e21: -13.471559
+          e22: 17.96208
+          e23: 59.454475
+        isValid: 1
+      - indices[0]: 5
+        indices[1]: 4
+        indices[2]: 8
+        indices[3]: -1
+        neighbors[0]: 75
+        neighbors[1]: 55
+        neighbors[2]: 64
+        neighbors[3]: 29
+        matrix:
+          e00: -0.3671879
+          e01: -1.2031747
+          e02: -0.17526558
+          e03: 11.742206
+          e10: -1.1806289
+          e11: -9.526814
+          e12: -0.8617272
+          e13: 46.63412
+          e20: 0
+          e21: -18.004976
+          e22: -0.11578751
+          e23: 61.128914
+        isValid: 1
+      - indices[0]: 5
+        indices[1]: 0
+        indices[2]: 4
+        indices[3]: -1
+        neighbors[0]: 67
+        neighbors[1]: 63
+        neighbors[2]: 58
+        neighbors[3]: 29
+        matrix:
+          e00: -1.1263009
+          e01: -0.5485816
+          e02: -0.082158744
+          e03: 8.501931
+          e10: -5.7454624
+          e11: -2.1151834
+          e12: -0.075068764
+          e13: 21.971153
+          e20: -7.028811
+          e21: -1.263658
+          e22: -0.008126412
+          e23: 16.450104
+        isValid: 1
+      - indices[0]: 13
+        indices[1]: 8
+        indices[2]: 12
+        indices[3]: -1
+        neighbors[0]: 74
+        neighbors[1]: 59
+        neighbors[2]: 62
+        neighbors[3]: 31
+        matrix:
+          e00: 0.41577205
+          e01: -1.2025416
+          e02: -0.17398907
+          e03: 13.164609
+          e10: 1.4914929
+          e11: -10.234938
+          e12: -0.84766686
+          e13: 54.39677
+          e20: 0
+          e21: -20.997375
+          e22: -0.13503122
+          e23: 71.288445
+        isValid: 1
+      - indices[0]: 4
+        indices[1]: 15
+        indices[2]: 9
+        indices[3]: -1
+        neighbors[0]: 69
+        neighbors[1]: 75
+        neighbors[2]: 68
+        neighbors[3]: 33
+        matrix:
+          e00: -0.27640054
+          e01: -0.41001076
+          e02: -1.0257528
+          e03: 10.808078
+          e10: -0.5926019
+          e11: -2.1953042
+          e12: -8.324016
+          e13: 38.21128
+          e20: 0
+          e21: -1.1860815
+          e22: -16.043308
+          e23: 41.710728
+        isValid: 1
+      - indices[0]: 4
+        indices[1]: 0
+        indices[2]: 2
+        indices[3]: -1
+        neighbors[0]: 77
+        neighbors[1]: 68
+        neighbors[2]: 64
+        neighbors[3]: 36
+        matrix:
+          e00: -0.88157064
+          e01: 0.11233015
+          e02: -0.95200413
+          e03: 7.9212837
+          e10: -4.8692136
+          e11: 0.809437
+          e12: -3.7819097
+          e13: 19.466618
+          e20: -6.680133
+          e21: 1.4469361
+          e22: -3.2636695
+          e23: 14.335609
+        isValid: 1
+      - indices[0]: 2
+        indices[1]: 15
+        indices[2]: 4
+        indices[3]: -1
+        neighbors[0]: 66
+        neighbors[1]: 67
+        neighbors[2]: 60
+        neighbors[3]: 36
+        matrix:
+          e00: -0.84178805
+          e01: 0.107161574
+          e02: -0.98494685
+          e03: 8.955006
+          e10: -2.5312803
+          e11: 0.4929027
+          e12: -7.4025884
+          e13: 27.752346
+          e20: -0.85754246
+          e21: 0.043338742
+          e22: -12.096384
+          e23: 29.763563
+        isValid: 1
+      - indices[0]: 9
+        indices[1]: 15
+        indices[2]: 14
+        indices[3]: -1
+        neighbors[0]: 60
+        neighbors[1]: 70
+        neighbors[2]: 66
+        neighbors[3]: 37
+        matrix:
+          e00: 1.039806
+          e01: -0.3958988
+          e02: -1.040849
+          e03: 12.314847
+          e10: 2.3932426
+          e11: -2.3733327
+          e12: -8.430521
+          e13: 42.620235
+          e20: 0
+          e21: -1.2433761
+          e22: -16.818293
+          e23: 43.725597
+        isValid: 1
+      - indices[0]: 9
+        indices[1]: 14
+        indices[2]: 12
+        indices[3]: -1
+        neighbors[0]: 54
+        neighbors[1]: 74
+        neighbors[2]: 69
+        neighbors[3]: 38
+        matrix:
+          e00: 0.30130714
+          e01: -0.08214895
+          e02: -1.37648
+          e03: 11.499539
+          e10: 0.70621914
+          e11: -0.6719205
+          e12: -10.53604
+          e13: 40.21448
+          e20: 0
+          e21: -1.2518104
+          e22: -16.932379
+          e23: 44.02221
+        isValid: 1
+      - indices[0]: 11
+        indices[1]: 14
+        indices[2]: 2
+        indices[3]: -1
+        neighbors[0]: 60
+        neighbors[1]: 73
+        neighbors[2]: 54
+        neighbors[3]: 39
+        matrix:
+          e00: 0.2856443
+          e01: 1.8006613
+          e02: 0.2295803
+          e03: 8.874766
+          e10: 2.4612877
+          e11: 16.361757
+          e12: 0.82888526
+          e13: 18.217707
+          e20: 5.308311
+          e21: 36.430294
+          e22: -1.863012
+          e23: -4.4987416
+        isValid: 1
+      - indices[0]: 7
+        indices[1]: 11
+        indices[2]: 3
+        indices[3]: -1
+        neighbors[0]: 73
+        neighbors[1]: 56
+        neighbors[2]: 57
+        neighbors[3]: 40
+        matrix:
+          e00: 0.09855758
+          e01: 0.891611
+          e02: 0.8217885
+          e03: 7.5487895
+          e10: -0.06669671
+          e11: 5.4549203
+          e12: 4.396834
+          e13: 13.297562
+          e20: 0
+          e21: 5.420948
+          e22: 2.5356057
+          e23: 4.2921686
+        isValid: 1
+      - indices[0]: 11
+        indices[1]: 2
+        indices[2]: 3
+        indices[3]: -1
+        neighbors[0]: 76
+        neighbors[1]: 72
+        neighbors[2]: 71
+        neighbors[3]: 40
+        matrix:
+          e00: 0.30393004
+          e01: 1.7999763
+          e02: 0.21641228
+          e03: 8.285815
+          e10: 1.5364362
+          e11: 15.287584
+          e12: 1.2117442
+          e13: 14.72875
+          e20: 1.6937398
+          e21: 31.736002
+          e22: 1.1577511
+          e23: -7.634364
+        isValid: 1
+      - indices[0]: 8
+        indices[1]: 9
+        indices[2]: 12
+        indices[3]: -1
+        neighbors[0]: 70
+        neighbors[1]: 65
+        neighbors[2]: 75
+        neighbors[3]: 42
+        matrix:
+          e00: 0.41248068
+          e01: -1.2038252
+          e02: -0.17657737
+          e03: 12.692566
+          e10: 1.0447694
+          e11: -9.7682
+          e12: -0.9669877
+          e13: 49.405388
+          e20: 0
+          e21: -17.786785
+          e22: -0.11438436
+          e23: 60.388126
+        isValid: 1
+      - indices[0]: 8
+        indices[1]: 4
+        indices[2]: 9
+        indices[3]: -1
+        neighbors[0]: 66
+        neighbors[1]: 74
+        neighbors[2]: 63
+        neighbors[3]: 50
+        matrix:
+          e00: -0.3651542
+          e01: -1.2038254
+          e02: -0.1765774
+          e03: 11.382998
+          e10: -0.93411183
+          e11: -9.127847
+          e12: -0.87306046
+          e13: 43.743004
+          e20: 0
+          e21: -16.020061
+          e22: -0.10302281
+          e23: 54.38991
+        isValid: 1
+      - indices[0]: 3
+        indices[1]: 2
+        indices[2]: 1
+        indices[3]: -1
+        neighbors[0]: 77
+        neighbors[1]: 61
+        neighbors[2]: 73
+        neighbors[3]: 53
+        matrix:
+          e00: -0.96791863
+          e01: 0.90535635
+          e02: 0.03223439
+          e03: 7.0544558
+          e10: -6.4951053
+          e11: 5.3543158
+          e12: 0.14086536
+          e13: 14.93181
+          e20: -10.745364
+          e21: 7.3965783
+          e22: 0.26983222
+          e23: 9.360806
+        isValid: 1
+      - indices[0]: 2
+        indices[1]: 0
+        indices[2]: 1
+        indices[3]: -1
+        neighbors[0]: 58
+        neighbors[1]: 76
+        neighbors[2]: 67
+        neighbors[3]: 53
+        matrix:
+          e00: -0.82362616
+          e01: 1.2387862
+          e02: 0.32390615
+          e03: 7.29948
+          e10: -6.972346
+          e11: 7.1766863
+          e12: 0.710681
+          e13: 16.181044
+          e20: -13.761637
+          e21: 8.749683
+          e22: 0
+          e23: 12.886668
+        isValid: 1
+      m_HullRays:
+      - {x: 0.97288233, y: -0.19352809, z: 0.12667638}
+      - {x: 0.9314808, y: -0.096197754, z: -0.35084108}
+      - {x: 0.4027488, y: -0.695158, z: 0.5954399}
+      - {x: 0.48929617, y: -0.55755323, z: -0.67061436}
+      - {x: 0.5659921, y: 0.5719082, z: 0.59377944}
+      - {x: 0.56833136, y: 0.71659076, z: -0.404348}
+      - {x: 0, y: 0, z: 0}
+      - {x: 0.06267657, y: -0.23433076, z: -0.9701344}
+      - {x: 0, y: 0.8958605, z: -0.44433537}
+      - {x: 0, y: 0.73051834, z: 0.68289316}
+      - {x: 0, y: 0, z: 0}
+      - {x: -0.5514172, y: -0.37272242, z: -0.7463358}
+      - {x: -0.6423516, y: 0.52928483, z: 0.5542941}
+      - {x: -0.6710153, y: 0.6509347, z: -0.35499623}
+      - {x: -0.52791655, y: -0.5537122, z: 0.64397734}
+      - {x: 0.012145748, y: -0.065449074, z: 0.997782}
+      - {x: 0, y: 0, z: 0}
+      - {x: 0, y: 0, z: 0}
+      - {x: 0, y: 0, z: 0}
+      - {x: 0, y: 0, z: 0}
+    m_ProbeSets:
+    - m_Hash:
+        serializedVersion: 2
+        Hash: 1c8f7e89b855646120e5c06499b67ed2
+      m_Offset: 0
+      m_Size: 20
+    m_Positions:
+    - {x: 2.03, y: 1.7199999, z: 1}
+    - {x: 2.03, y: 1.7199999, z: -1}
+    - {x: 1, y: 0.099999994, z: 2.3899999}
+    - {x: 1, y: 0.26999998, z: -2.27}
+    - {x: 1.73, y: 3.3799999, z: 2.35}
+    - {x: 1.73, y: 3.3999999, z: -0.76}
+    - {x: -1.0799999, y: 0.81, z: -1.81}
+    - {x: -1.27, y: 0.56, z: -2.8899999}
+    - {x: -1, y: 3.3999999, z: -0.76}
+    - {x: -1, y: 3.3799999, z: 2.35}
+    - {x: -3.82, y: 0.81, z: -1.81}
+    - {x: -4.0099998, y: 0.56, z: -2.8899999}
+    - {x: -4.44, y: 3.3799999, z: 2.35}
+    - {x: -4.44, y: 3.3999999, z: -0.76}
+    - {x: -3.82, y: 0.81, z: 2.54}
+    - {x: -1.0799999, y: 0.81, z: 2.54}
+    - {x: -3.82, y: 0.81, z: 1.2099999}
+    - {x: -1.0799999, y: 0.81, z: 1.2099999}
+    - {x: -3.82, y: 0.81, z: -0.69}
+    - {x: -1.0799999, y: 0.81, z: -0.69}
+    m_NonTetrahedralizedProbeSetIndexMap: []
+  m_BakedCoefficients:
+  - sh[ 0]: 0.09406467
+    sh[ 1]: -0.02875952
+    sh[ 2]: -0.022564104
+    sh[ 3]: 0.042357344
+    sh[ 4]: -0.0055012577
+    sh[ 5]: -0.0008685911
+    sh[ 6]: -0.001960377
+    sh[ 7]: -0.0065717017
+    sh[ 8]: 0.006109995
+    sh[ 9]: 0.251685
+    sh[10]: -0.12020984
+    sh[11]: -0.050788265
+    sh[12]: -0.07693849
+    sh[13]: 0.02753783
+    sh[14]: 0.0051716147
+    sh[15]: -0.0038286438
+    sh[16]: 0.00074135856
+    sh[17]: 0.010739776
+    sh[18]: 0.07708245
+    sh[19]: -0.023073036
+    sh[20]: -0.020162683
+    sh[21]: 0.05368921
+    sh[22]: -0.006218337
+    sh[23]: -0.0011299725
+    sh[24]: -0.0014249315
+    sh[25]: -0.0073255557
+    sh[26]: 0.004457239
+  - sh[ 0]: 0.0944389
+    sh[ 1]: -0.029198397
+    sh[ 2]: 0.0011691427
+    sh[ 3]: 0.04197487
+    sh[ 4]: -0.0052933223
+    sh[ 5]: -0.0043891356
+    sh[ 6]: -0.00208172
+    sh[ 7]: 0.0016751714
+    sh[ 8]: 0.006089529
+    sh[ 9]: 0.24646729
+    sh[10]: -0.118454196
+    sh[11]: 0.023127137
+    sh[12]: -0.072679214
+    sh[13]: 0.026530107
+    sh[14]: -0.0084172515
+    sh[15]: -0.0037406841
+    sh[16]: -0.0029829873
+    sh[17]: 0.010009786
+    sh[18]: 0.077359125
+    sh[19]: -0.023453813
+    sh[20]: -0.00045293546
+    sh[21]: 0.053329084
+    sh[22]: -0.006012562
+    sh[23]: -0.004241352
+    sh[24]: -0.0015128498
+    sh[25]: 0.0022778057
+    sh[26]: 0.004442493
+  - sh[ 0]: 0.060812496
+    sh[ 1]: -0.007084122
+    sh[ 2]: -0.021836163
+    sh[ 3]: 0.034977064
+    sh[ 4]: 0.0027260645
+    sh[ 5]: -0.0040344237
+    sh[ 6]: -0.00020151981
+    sh[ 7]: -0.010258789
+    sh[ 8]: 0.0038666737
+    sh[ 9]: 0.46903127
+    sh[10]: 0.07897561
+    sh[11]: -0.2085984
+    sh[12]: -0.27583444
+    sh[13]: -0.048382536
+    sh[14]: -0.03562535
+    sh[15]: -0.0026755168
+    sh[16]: 0.06198395
+    sh[17]: 0.028145766
+    sh[18]: 0.05713605
+    sh[19]: -0.004941875
+    sh[20]: -0.021882875
+    sh[21]: 0.034555696
+    sh[22]: 0.002840399
+    sh[23]: -0.0040425085
+    sh[24]: -0.00020649086
+    sh[25]: -0.010177826
+    sh[26]: 0.0038482845
+  - sh[ 0]: 0.06339673
+    sh[ 1]: -0.00939594
+    sh[ 2]: -0.00045643703
+    sh[ 3]: 0.036106452
+    sh[ 4]: 0.0013395615
+    sh[ 5]: -0.0025381343
+    sh[ 6]: -0.00019519833
+    sh[ 7]: 0.0028745316
+    sh[ 8]: 0.0028820785
+    sh[ 9]: 0.67265016
+    sh[10]: 0.04757684
+    sh[11]: 0.1677723
+    sh[12]: -0.4481562
+    sh[13]: -0.032977797
+    sh[14]: 0.007397525
+    sh[15]: -0.008297668
+    sh[16]: -0.045049984
+    sh[17]: 0.04245094
+    sh[18]: 0.05924177
+    sh[19]: -0.0070409407
+    sh[20]: -0.0003114614
+    sh[21]: 0.035301168
+    sh[22]: 0.0014742026
+    sh[23]: -0.002558933
+    sh[24]: -0.00020366149
+    sh[25]: 0.0027815495
+    sh[26]: 0.0028942502
+  - sh[ 0]: 0.07615098
+    sh[ 1]: -0.031815227
+    sh[ 2]: -0.02655416
+    sh[ 3]: 0.022057002
+    sh[ 4]: -0.0036354696
+    sh[ 5]: 0.0012356595
+    sh[ 6]: -0.0010495894
+    sh[ 7]: -0.006137819
+    sh[ 8]: 0.0021358426
+    sh[ 9]: 0.12158191
+    sh[10]: -0.07467183
+    sh[11]: -0.050981235
+    sh[12]: 0.0049109445
+    sh[13]: 0.005593655
+    sh[14]: 0.010235831
+    sh[15]: -0.0012889397
+    sh[16]: -0.00172507
+    sh[17]: -0.001888427
+    sh[18]: 0.05933813
+    sh[19]: -0.02348297
+    sh[20]: -0.022833832
+    sh[21]: 0.033466168
+    sh[22]: -0.0059619
+    sh[23]: 0.0005367315
+    sh[24]: -0.00055788114
+    sh[25]: -0.007596864
+    sh[26]: 0.0010462599
+  - sh[ 0]: 0.08025065
+    sh[ 1]: -0.03604416
+    sh[ 2]: -0.0037063467
+    sh[ 3]: 0.026975302
+    sh[ 4]: -0.005697103
+    sh[ 5]: -0.00452218
+    sh[ 6]: -0.0019303575
+    sh[ 7]: -0.0007869759
+    sh[ 8]: 0.0026174572
+    sh[ 9]: 0.16331929
+    sh[10]: -0.115569666
+    sh[11]: 0.006801524
+    sh[12]: -0.008022903
+    sh[13]: 0.012045013
+    sh[14]: -0.00837229
+    sh[15]: -0.003854939
+    sh[16]: -0.002458656
+    sh[17]: -0.004778832
+    sh[18]: 0.06358141
+    sh[19]: -0.0274242
+    sh[20]: -0.00496161
+    sh[21]: 0.038893744
+    sh[22]: -0.00807878
+    sh[23]: -0.004247962
+    sh[24]: -0.0013027659
+    sh[25]: -0.00032024758
+    sh[26]: 0.0014638399
+  - sh[ 0]: 0.07328067
+    sh[ 1]: -0.008428019
+    sh[ 2]: 0.0021792494
+    sh[ 3]: -0.021320356
+    sh[ 4]: 0.0039375774
+    sh[ 5]: -0.0030285239
+    sh[ 6]: -0.0007851531
+    sh[ 7]: -0.005940099
+    sh[ 8]: 0.005510959
+    sh[ 9]: 0.49582273
+    sh[10]: -0.14619185
+    sh[11]: 0.031097645
+    sh[12]: 0.36781263
+    sh[13]: -0.04052999
+    sh[14]: -0.0049087116
+    sh[15]: -0.00382918
+    sh[16]: -0.0017674605
+    sh[17]: 0.029121801
+    sh[18]: 0.036967676
+    sh[19]: -0.0031472247
+    sh[20]: -0.008060696
+    sh[21]: 0.012328041
+    sh[22]: 0.0022346212
+    sh[23]: -0.0025898162
+    sh[24]: 0.000036536236
+    sh[25]: -0.0013718787
+    sh[26]: 0.0013274406
+  - sh[ 0]: 0.070980854
+    sh[ 1]: -0.007861065
+    sh[ 2]: 0.007166677
+    sh[ 3]: -0.01642191
+    sh[ 4]: 0.0020228957
+    sh[ 5]: -0.002834698
+    sh[ 6]: -0.00023495381
+    sh[ 7]: -0.008495748
+    sh[ 8]: 0.0043678735
+    sh[ 9]: 0.26657727
+    sh[10]: -0.036363836
+    sh[11]: 0.13370118
+    sh[12]: 0.1820459
+    sh[13]: -0.0047227372
+    sh[14]: -0.0075997133
+    sh[15]: 0.0019942895
+    sh[16]: 0.0453415
+    sh[17]: 0.015523713
+    sh[18]: 0.03789757
+    sh[19]: -0.004642516
+    sh[20]: -0.0075463336
+    sh[21]: 0.0120418845
+    sh[22]: 0.0015819892
+    sh[23]: -0.0027969778
+    sh[24]: 0.00015139222
+    sh[25]: -0.0019315833
+    sh[26]: 0.00097655813
+  - sh[ 0]: 0.07302402
+    sh[ 1]: -0.03010197
+    sh[ 2]: -0.005086969
+    sh[ 3]: -0.008485419
+    sh[ 4]: 0.006838345
+    sh[ 5]: -0.0038452744
+    sh[ 6]: -0.0014156827
+    sh[ 7]: -0.003473684
+    sh[ 8]: 0.002488499
+    sh[ 9]: 0.14935398
+    sh[10]: -0.114742704
+    sh[11]: 0.0027796712
+    sh[12]: 0.05255575
+    sh[13]: -0.016495457
+    sh[14]: -0.0071001723
+    sh[15]: -0.002685886
+    sh[16]: -0.0006423935
+    sh[17]: -0.00947818
+    sh[18]: 0.038689423
+    sh[19]: -0.009188942
+    sh[20]: -0.009051312
+    sh[21]: 0.018385295
+    sh[22]: -0.00092964515
+    sh[23]: -0.0029443612
+    sh[24]: -0.00021251358
+    sh[25]: -0.002036492
+    sh[26]: 0.000985802
+  - sh[ 0]: 0.067381814
+    sh[ 1]: -0.027291039
+    sh[ 2]: -0.023011664
+    sh[ 3]: -0.005978482
+    sh[ 4]: 0.0058587864
+    sh[ 5]: 0.00036234048
+    sh[ 6]: -0.000857151
+    sh[ 7]: -0.000043500335
+    sh[ 8]: 0.0018690912
+    sh[ 9]: 0.1242699
+    sh[10]: -0.087653816
+    sh[11]: -0.05208579
+    sh[12]: 0.042819317
+    sh[13]: -0.012256417
+    sh[14]: 0.0131051
+    sh[15]: -0.0011238209
+    sh[16]: -0.008706801
+    sh[17]: -0.0069144526
+    sh[18]: 0.037151035
+    sh[19]: -0.008593861
+    sh[20]: -0.013242847
+    sh[21]: 0.016486073
+    sh[22]: -0.00056360214
+    sh[23]: -0.0022398895
+    sh[24]: -0.00004921599
+    sh[25]: -0.0037712243
+    sh[26]: 0.0006861225
+  - sh[ 0]: 0.201767
+    sh[ 1]: -0.053004842
+    sh[ 2]: 0.028036948
+    sh[ 3]: -0.13364728
+    sh[ 4]: 0.01623617
+    sh[ 5]: -0.005827545
+    sh[ 6]: -0.0016233829
+    sh[ 7]: -0.012252755
+    sh[ 8]: 0.013165822
+    sh[ 9]: 0.09791249
+    sh[10]: -0.014782895
+    sh[11]: 0.011464489
+    sh[12]: 0.05863969
+    sh[13]: -0.0015471271
+    sh[14]: -0.0042724134
+    sh[15]: -0.0006856498
+    sh[16]: 0.0056683817
+    sh[17]: 0.0068192626
+    sh[18]: 0.036578238
+    sh[19]: -0.0068295235
+    sh[20]: -0.00919803
+    sh[21]: 0.0018639258
+    sh[22]: 0.001928611
+    sh[23]: -0.0028886115
+    sh[24]: 0.00036977665
+    sh[25]: -0.0029984454
+    sh[26]: 0.00024131045
+  - sh[ 0]: 0.17852919
+    sh[ 1]: -0.02784858
+    sh[ 2]: 0.083854556
+    sh[ 3]: -0.11404543
+    sh[ 4]: 0.0072769625
+    sh[ 5]: -0.0077298083
+    sh[ 6]: 0.001881795
+    sh[ 7]: -0.04522565
+    sh[ 8]: 0.01392951
+    sh[ 9]: 0.079921156
+    sh[10]: -0.007821939
+    sh[11]: 0.014438641
+    sh[12]: 0.04605379
+    sh[13]: 0.0012192889
+    sh[14]: -0.0037238025
+    sh[15]: -0.00005903041
+    sh[16]: 0.0057694507
+    sh[17]: 0.0068438966
+    sh[18]: 0.0359141
+    sh[19]: -0.0055909273
+    sh[20]: -0.007828685
+    sh[21]: 0.0030563476
+    sh[22]: 0.002183749
+    sh[23]: -0.003867686
+    sh[24]: 0.00070992793
+    sh[25]: -0.005220264
+    sh[26]: 0.00041238926
+  - sh[ 0]: 0.09441157
+    sh[ 1]: -0.06438405
+    sh[ 2]: -0.039404247
+    sh[ 3]: -0.013052507
+    sh[ 4]: 0.010813467
+    sh[ 5]: 0.008193666
+    sh[ 6]: -0.0005939959
+    sh[ 7]: 0.0016443717
+    sh[ 8]: -0.0057592527
+    sh[ 9]: 0.06917326
+    sh[10]: -0.02934595
+    sh[11]: -0.026385171
+    sh[12]: 0.040641814
+    sh[13]: -0.007627164
+    sh[14]: 0.0018353717
+    sh[15]: -0.0005946945
+    sh[16]: -0.008161159
+    sh[17]: 0.0010883786
+    sh[18]: 0.028379068
+    sh[19]: -0.005350127
+    sh[20]: -0.011639323
+    sh[21]: 0.008292451
+    sh[22]: 0.0013800461
+    sh[23]: -0.0023567309
+    sh[24]: 0.0003312415
+    sh[25]: -0.0025394037
+    sh[26]: -0.0004676957
+  - sh[ 0]: 0.11224529
+    sh[ 1]: -0.08444235
+    sh[ 2]: 0.0014728594
+    sh[ 3]: -0.020481521
+    sh[ 4]: 0.014398347
+    sh[ 5]: -0.007414327
+    sh[ 6]: -0.0015417517
+    sh[ 7]: -0.004409411
+    sh[ 8]: -0.0077270735
+    sh[ 9]: 0.07395619
+    sh[10]: -0.03421615
+    sh[11]: -0.0052814814
+    sh[12]: 0.04605614
+    sh[13]: -0.009790755
+    sh[14]: -0.003870721
+    sh[15]: -0.0013003387
+    sh[16]: -0.0008359131
+    sh[17]: 0.0012818932
+    sh[18]: 0.02926038
+    sh[19]: -0.0062965835
+    sh[20]: -0.010100949
+    sh[21]: 0.008358994
+    sh[22]: 0.0013791816
+    sh[23]: -0.0028171686
+    sh[24]: 0.00032132518
+    sh[25]: -0.0026661952
+    sh[26]: -0.000532936
+  - sh[ 0]: 0.16436365
+    sh[ 1]: -0.04095254
+    sh[ 2]: -0.07859033
+    sh[ 3]: -0.09780121
+    sh[ 4]: 0.0126121035
+    sh[ 5]: 0.003517661
+    sh[ 6]: 0.000080794525
+    sh[ 7]: 0.02197375
+    sh[ 8]: 0.009399616
+    sh[ 9]: 0.09206839
+    sh[10]: -0.015827343
+    sh[11]: -0.038540255
+    sh[12]: 0.051598817
+    sh[13]: -0.00066279486
+    sh[14]: -0.0012620566
+    sh[15]: -0.000046979432
+    sh[16]: -0.012137321
+    sh[17]: 0.005731887
+    sh[18]: 0.035523407
+    sh[19]: -0.0061743245
+    sh[20]: -0.012231988
+    sh[21]: 0.0030663756
+    sh[22]: 0.0018864975
+    sh[23]: -0.0025350188
+    sh[24]: 0.00042890097
+    sh[25]: -0.0015918588
+    sh[26]: 0.00012750606
+  - sh[ 0]: 0.07005199
+    sh[ 1]: -0.0076403674
+    sh[ 2]: -0.026155353
+    sh[ 3]: -0.017632043
+    sh[ 4]: 0.0034914054
+    sh[ 5]: -0.0023441152
+    sh[ 6]: -0.00041932715
+    sh[ 7]: 0.002775907
+    sh[ 8]: 0.0049539227
+    sh[ 9]: 0.32726854
+    sh[10]: -0.09507232
+    sh[11]: -0.17613651
+    sh[12]: 0.21991815
+    sh[13]: -0.023405341
+    sh[14]: 0.015834272
+    sh[15]: 0.00083214045
+    sh[16]: -0.05455017
+    sh[17]: 0.015733643
+    sh[18]: 0.03582378
+    sh[19]: -0.0022910384
+    sh[20]: -0.012369792
+    sh[21]: 0.012518712
+    sh[22]: 0.0019634638
+    sh[23]: -0.0028669897
+    sh[24]: 0.00011537775
+    sh[25]: -0.0034473296
+    sh[26]: 0.0013369829
+  - sh[ 0]: 0.21275133
+    sh[ 1]: -0.053840514
+    sh[ 2]: -0.03566997
+    sh[ 3]: -0.14234218
+    sh[ 4]: 0.01708085
+    sh[ 5]: -0.0010655308
+    sh[ 6]: -0.0005841072
+    sh[ 7]: 0.0033903287
+    sh[ 8]: 0.013463874
+    sh[ 9]: 0.1008421
+    sh[10]: -0.015148195
+    sh[11]: -0.027129391
+    sh[12]: 0.0641671
+    sh[13]: -0.0013593682
+    sh[14]: -0.0021482133
+    sh[15]: -0.001001632
+    sh[16]: -0.008989772
+    sh[17]: 0.007754456
+    sh[18]: 0.03594001
+    sh[19]: -0.005778745
+    sh[20]: -0.010815116
+    sh[21]: 0.0016883726
+    sh[22]: 0.0019793648
+    sh[23]: -0.0027052162
+    sh[24]: 0.00047718865
+    sh[25]: -0.002354147
+    sh[26]: 0.00031430955
+  - sh[ 0]: 0.07518567
+    sh[ 1]: -0.0071394653
+    sh[ 2]: -0.020513242
+    sh[ 3]: -0.022525068
+    sh[ 4]: 0.003834787
+    sh[ 5]: -0.0022226598
+    sh[ 6]: -0.0011979385
+    sh[ 7]: -0.00022789212
+    sh[ 8]: 0.0062843543
+    sh[ 9]: 0.4687242
+    sh[10]: -0.13586213
+    sh[11]: -0.024933359
+    sh[12]: 0.32333982
+    sh[13]: -0.036141742
+    sh[14]: -0.002415335
+    sh[15]: 0.002789056
+    sh[16]: 0.002272837
+    sh[17]: 0.023279596
+    sh[18]: 0.036897138
+    sh[19]: -0.0018652293
+    sh[20]: -0.012843996
+    sh[21]: 0.014373709
+    sh[22]: 0.0019644217
+    sh[23]: -0.002514843
+    sh[24]: -0.000111566995
+    sh[25]: -0.0035898709
+    sh[26]: 0.0017660982
+  - sh[ 0]: 0.22489205
+    sh[ 1]: -0.05752619
+    sh[ 2]: 0.009225467
+    sh[ 3]: -0.14580667
+    sh[ 4]: 0.016887859
+    sh[ 5]: -0.003887119
+    sh[ 6]: -0.000006423824
+    sh[ 7]: -0.009342541
+    sh[ 8]: 0.013556388
+    sh[ 9]: 0.10502456
+    sh[10]: -0.017293636
+    sh[11]: -0.0032151814
+    sh[12]: 0.06757985
+    sh[13]: -0.0018946126
+    sh[14]: -0.0028635408
+    sh[15]: -0.0013332973
+    sh[16]: 0.00004129097
+    sh[17]: 0.008227596
+    sh[18]: 0.037281208
+    sh[19]: -0.0070053046
+    sh[20]: -0.010188102
+    sh[21]: 0.0015697182
+    sh[22]: 0.0019075356
+    sh[23]: -0.0026064948
+    sh[24]: 0.00044837786
+    sh[25]: -0.0029098545
+    sh[26]: 0.00024368527
+  - sh[ 0]: 0.076109484
+    sh[ 1]: -0.008328976
+    sh[ 2]: -0.006234657
+    sh[ 3]: -0.021868732
+    sh[ 4]: 0.003865111
+    sh[ 5]: -0.0026896265
+    sh[ 6]: -0.0013319291
+    sh[ 7]: -0.004050242
+    sh[ 8]: 0.0064499876
+    sh[ 9]: 0.46522924
+    sh[10]: -0.13773166
+    sh[11]: 0.03228663
+    sh[12]: 0.31049052
+    sh[13]: -0.03447747
+    sh[14]: -0.0075531797
+    sh[15]: 0.0039967895
+    sh[16]: 0.012814428
+    sh[17]: 0.021259153
+    sh[18]: 0.038254406
+    sh[19]: -0.002517169
+    sh[20]: -0.010065637
+    sh[21]: 0.015117952
+    sh[22]: 0.0019939055
+    sh[23]: -0.0025301147
+    sh[24]: -0.00019697366
+    sh[25]: -0.002289243
+    sh[26]: 0.0018834304
+  m_BakedLightOcclusion:
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff
+  - m_ProbeOcclusionLightIndex: ffffffffffffffffffffffffffffffff
+    m_Occlusion:
+    - 1
+    - 1
+    - 1
+    - 1
+    m_OcclusionMaskChannel: ffffffff

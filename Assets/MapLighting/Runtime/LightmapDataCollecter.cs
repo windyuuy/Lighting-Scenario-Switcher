@@ -77,7 +77,7 @@ namespace MapLighting
 		}
 		#endif
 		
-		public async Task Save(string saveDir)
+		public async Task Save(string saveDir,bool needSaveTexture)
 		{
 #if UNITY_EDITOR
 			if (!Directory.Exists(saveDir))
@@ -85,7 +85,7 @@ namespace MapLighting
 				Directory.CreateDirectory(saveDir);
 			}
 			var savePath = saveDir + "LightMapData.asset";
-			var task1=lightmapData.Save(saveDir, baseLightMapData, true);
+			var task1=lightmapData.Save(saveDir, baseLightMapData, needSaveTexture);
 			await Task.WhenAll(Enumerable.Empty<Task>()
 				.Append(task1)
 				// .Append(task2)

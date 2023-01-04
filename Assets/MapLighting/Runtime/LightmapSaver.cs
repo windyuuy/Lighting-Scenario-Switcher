@@ -10,6 +10,7 @@ namespace MapLighting
 	public class LightmapSaver:MonoBehaviour
 	{
 		public string saveUrl;
+		public bool saveTextureToLocal=false;
 
 		protected LightmapDataCollecter collecter;
 		[Conditional("UNITY_EDITOR")]
@@ -18,7 +19,7 @@ namespace MapLighting
 			#if UNITY_EDITOR
 			collecter = ScriptableObject.CreateInstance<LightmapDataCollecter>();
 			collecter.Collect();
-			await collecter.Save(saveUrl);
+			await collecter.Save(saveUrl, saveTextureToLocal);
 			AssetDatabase.Refresh();
 			await collecter.DoPostSavedTask();
 #else

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Serialization;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -17,32 +18,49 @@ namespace MapLighting
 		[System.Serializable]
 		public class LightmapInfo
 		{
-			public string lightmap;
-			public string lightmapDir;
-			public string lightmapShadow;
+			public string lightmapPath;
+			public string lightmapDirPath;
+			public string lightmapShadowPath;
+			
+			public Texture2D lightmap;
+			public Texture2D lightmapDir;
+			public Texture2D lightmapShadow;
 		}
 		public LightmapsMode lightmapsMode;
 
 		public LightmapInfo[] lightmapInfos;
 
+		/// <summary>
+		/// 优先加载方式
+		/// </summary>
+		public bool usedAddressableTexture=false;
+
 		public async Task Load(string resourceFolder, BaseLightMapData baseLightMapData)
 		{
-			async Task<Texture2D> LoadTexture(string p)
+			async Task<Texture2D> LoadTexture(string p,Texture2D texture2D)
 			{
-				if (string.IsNullOrEmpty(p))
+				if ((usedAddressableTexture || texture2D == null) && !string.IsNullOrEmpty(p))
 				{
-					return null;
+					var obj = await Addressables.LoadAssetAsync<Texture2D>(resourceFolder + p).Task;
+					if (obj != null)
+					{
+						return obj;
+					}
 				}
-				var obj = await Addressables.LoadAssetAsync<Texture2D>(resourceFolder + p).Task;
-				return obj;
+				if (texture2D != null)
+				{
+					return texture2D;
+				}
+
+				return null;
 			}
 
 			async Task<Texture2D[]> LoadLightmap(LightmapInfo lightmapInfo)
 			{
 				var results=await Task.WhenAll(Enumerable.Empty<Task<Texture2D>>()
-					.Append(LoadTexture(lightmapInfo.lightmap))
-					.Append(LoadTexture(lightmapInfo.lightmapDir))
-					.Append(LoadTexture(lightmapInfo.lightmapShadow))
+					.Append(LoadTexture(lightmapInfo.lightmapPath,lightmapInfo.lightmap))
+					.Append(LoadTexture(lightmapInfo.lightmapDirPath,lightmapInfo.lightmapDir))
+					.Append(LoadTexture(lightmapInfo.lightmapShadowPath,lightmapInfo.lightmapShadow))
 				);
 				return results;
 			}
@@ -149,6 +167,7 @@ namespace MapLighting
 				);
 			}
 
+			this.usedAddressableTexture = needSaveTexture;
 			if (needSaveTexture)
 			{
 				// TODO: 优化同名文件冲突
@@ -175,9 +194,13 @@ namespace MapLighting
 			{
 				return new LightmapInfo()
 				{
-					lightmap = GetTextureName(lightmapInfo.lightmap),
-					lightmapDir = GetTextureName(lightmapInfo.lightmapDir),
-					lightmapShadow = GetTextureName(lightmapInfo.lightmapShadow),
+					lightmap = lightmapInfo.lightmap,
+					lightmapDir = lightmapInfo.lightmapDir,
+					lightmapShadow = lightmapInfo.lightmapShadow,
+					
+					lightmapPath = GetTextureName(lightmapInfo.lightmap),
+					lightmapDirPath = GetTextureName(lightmapInfo.lightmapDir),
+					lightmapShadowPath = GetTextureName(lightmapInfo.lightmapShadow),
 				};
 			}).ToArray();
 		}
