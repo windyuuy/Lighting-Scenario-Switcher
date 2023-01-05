@@ -147,11 +147,15 @@ namespace MapLighting
 		public static string CopySceneAsEmpty(Scene curScene,string destPath)
 		{
 			var newScenePath = destPath + curScene.name + "_Empty.unity";
-			if (!File.Exists(newScenePath))
+			if (File.Exists(newScenePath))
 			{
-				AssetDatabase.DeleteAsset(newScenePath);
+				// AssetDatabase.DeleteAsset(newScenePath);
+				File.Copy(curScene.path, newScenePath,true);
 			}
-			AssetDatabase.CopyAsset(curScene.path, newScenePath);
+			else
+			{
+				AssetDatabase.CopyAsset(curScene.path, newScenePath);
+			}
 			var emptyScene = EditorSceneManager.OpenScene(newScenePath,OpenSceneMode.Additive);
 			EditorSceneManager.SetActiveScene(emptyScene);
 			foreach (var rootGameObject in emptyScene.GetRootGameObjects())

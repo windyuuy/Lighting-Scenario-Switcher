@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using System.IO;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -12,8 +13,11 @@ namespace MapLighting
     public class LightmapSwitcher : MonoBehaviour
     {
         public string assetUrl;
-        public bool saveTextureToLocal = false;
         public bool loadRecoverScene = false;
+#if UNITY_EDITOR
+        public bool saveTextureToLocal = false;
+        public string saveUrl;
+#endif
 
         public LightmapDataRecover recover;
 
@@ -79,9 +83,14 @@ namespace MapLighting
 
         public async Task SaveAsync()
         {
-            assetUrl = fixAssetPath(assetUrl);
+            var savePath = saveUrl;
+            if (string.IsNullOrWhiteSpace(savePath))
+            {
+                savePath = assetUrl;
+            }
+            savePath = fixAssetPath(savePath);
 #if UNITY_EDITOR
-            var collecter = await SaveLightmapData(assetUrl, saveTextureToLocal);
+            var collecter = await SaveLightmapData(savePath, saveTextureToLocal);
             recover = collecter;
 #else
 			throw new System.Exception("save valid only for editor");
@@ -91,7 +100,16 @@ namespace MapLighting
 #if UNITY_EDITOR
         public static async Task<LightmapDataCollecter> SaveLightmapData(string saveUrl, bool saveTextureToLocal)
         {
-            var collecter = ScriptableObject.CreateInstance<LightmapDataCollecter>();
+            var lightMapDataSavePath = LightmapDataCollecter.GetLightMapDataSavePath(saveUrl);
+            LightmapDataCollecter collecter;
+            if (File.Exists(lightMapDataSavePath))
+            {
+                collecter = AssetDatabase.LoadAssetAtPath<LightmapDataCollecter>(lightMapDataSavePath);
+            }
+            else
+            {
+                collecter = ScriptableObject.CreateInstance<LightmapDataCollecter>();
+            }
             collecter.Collect();
             await collecter.Save(saveUrl, saveTextureToLocal);
             AssetDatabase.Refresh();

@@ -79,7 +79,12 @@ namespace MapLighting
 			this.sceneData = sceneData0;
 		}
 		#endif
-		
+
+		public static string GetLightMapDataSavePath(string saveDir)
+		{
+			var lightMapDataSavePath = saveDir + "LightMapData.asset";
+			return lightMapDataSavePath;
+		}
 		public async Task Save(string saveDir,bool needSaveTexture)
 		{
 #if UNITY_EDITOR
@@ -97,12 +102,17 @@ namespace MapLighting
 			
 			sceneData.Save(saveDir);
 			
-			var lightMapDataSavePath = saveDir + "LightMapData.asset";
-			if (File.Exists(lightMapDataSavePath))
+			var lightMapDataSavePath = GetLightMapDataSavePath(saveDir);
+			var selfAssetPath = AssetDatabase.GetAssetPath(this);
+			if (lightMapDataSavePath==selfAssetPath && string.IsNullOrEmpty(selfAssetPath)==false && File.Exists(selfAssetPath))
 			{
-				AssetDatabase.DeleteAsset(lightMapDataSavePath);
+				EditorUtility.SetDirty(this);
+				AssetDatabase.SaveAssetIfDirty(this);
 			}
-			AssetDatabase.CreateAsset(this, lightMapDataSavePath);
+			else
+			{
+				AssetDatabase.CreateAsset(this, lightMapDataSavePath);
+			}
 
 #else
 			throw new System.Exception("save valid only for editor");

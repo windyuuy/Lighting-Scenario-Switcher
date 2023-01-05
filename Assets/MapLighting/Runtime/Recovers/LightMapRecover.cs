@@ -161,10 +161,16 @@ namespace MapLighting
 				}
 
 				var destPath = $"{resourceFolder}{fileName}";
-				// await using var destFile = File.Create(destPath);
-				// await using var sourceFile = File.Open(p, FileMode.Open);
-				// await sourceFile.CopyToAsync(destFile);
-				AssetDatabase.CopyAsset(p, destPath);
+				if (File.Exists(destPath))
+				{
+					await using var destFile = File.Create(destPath);
+					await using var sourceFile = File.Open(p, FileMode.Open);
+					await sourceFile.CopyToAsync(destFile);
+				}
+				else
+				{
+					AssetDatabase.CopyAsset(p, destPath);
+				}
 
 				// coll[index] = destPath;
 
