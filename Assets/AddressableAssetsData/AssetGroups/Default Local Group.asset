@@ -17,12 +17,24 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: dac2810f22fe8bf43a43e541217f46f7
   m_SerializeEntries:
-  - m_GUID: e927e0bfcbfd1004f8f9a76108d5d72b
-    m_Address: Assets/Example_Simple/Example2/LightMapData.asset
+  - m_GUID: 5be609fa578669f4f89f26c622b6ef4d
+    m_Address: Assets/Example_Simple/LightData/LightMapData.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: a7f700b4eb6673e4aa72cd0812e8d357
-    m_Address: Assets/Example_Simple/Example2/LightProbe.asset
+  - m_GUID: ca6ef543914ce2a478ca9b83187f8746
+    m_Address: Assets/Example_Simple/LightData/Lightmap-0_comp_dir.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f468a3052ebd8404a8b7fcdb2c3055e2
+    m_Address: Assets/Example_Simple/LightData/Lightmap-0_comp_light.exr
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 635a4d09f64e99c45a22c6872d906920
+    m_Address: Assets/Example_Simple/LightData/LightProbe.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8c77e749226b6294c8de7eb1dd61c5cb
+    m_Address: Assets/Example_Simple/LightData/Example3_Empty.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

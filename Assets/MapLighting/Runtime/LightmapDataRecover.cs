@@ -23,8 +23,12 @@ namespace MapLighting
 			set => baseLightMapData = value;
 		}
 
-		public async Task Load(string resourceUrl)
+		public async Task Load(string resourceUrl,bool loadScene)
 		{
+			if (loadScene)
+			{
+				await sceneData.Load();
+			}
 			baseLightMapData = new();
 			// var loadPath = resourceUrl + "LightMapData.json";
 			// var str = await Addressables.LoadAssetAsync<TextAsset>(loadPath).Task;
@@ -68,7 +72,7 @@ namespace MapLighting
 			
 			foreach (var rendererData in rendererDatas)
 			{
-				var comp = GetCompByPath<MeshRenderer>(rendererData.path);
+				var comp = GetCompByPath<Renderer>(rendererData.path);
 				if (comp != null)
 				{
 					rendererData.recover.Recover(comp,baseLightMapData);
@@ -77,6 +81,11 @@ namespace MapLighting
 			
 			lightProbeData.Recover();
 
+		}
+
+		public async Task Unload()
+		{
+			sceneData.Unload();
 		}
 	}
 }

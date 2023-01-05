@@ -13,6 +13,7 @@ namespace MapLighting
     {
         public string assetUrl;
         public bool saveTextureToLocal = false;
+        public bool loadRecoverScene = false;
 
         public LightmapDataRecover recover;
 
@@ -26,6 +27,7 @@ namespace MapLighting
         }
         public async void Load()
         {
+            Debug.Log("Begin Load");
             assetUrl = fixAssetPath(assetUrl);
             try
             {
@@ -43,6 +45,7 @@ namespace MapLighting
                 Debug.LogException(e);
             }
             
+            Debug.Log("InitializeAsync done");
             var newRecover = recover;
             if (newRecover == null)
             {
@@ -54,8 +57,19 @@ namespace MapLighting
                 }
             }
 
-            await newRecover.Load(assetUrl);
+            Debug.Log("newRecover.Load begin");
+            await newRecover.Load(assetUrl,loadRecoverScene);
+            Debug.Log("newRecover.Recover begin");
             newRecover.Recover(newRecover.BaseLightMapData);
+            Debug.Log("newRecover.Recover done");
+        }
+
+        public async Task Unload()
+        {
+            if (recover != null)
+            {
+                await recover.Unload();
+            }
         }
 
         public async void Save()

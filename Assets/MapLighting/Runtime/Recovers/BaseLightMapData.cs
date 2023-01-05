@@ -51,6 +51,10 @@ namespace MapLighting
 
 		public int ValidateLightmapIndex(int lightmapIndex)
 		{
+			if (lightmapIndex < 0 || lightmapIndex >= lightmapInfos.Count)
+			{
+				return lightmapIndex;
+			}
 			var lightmapInfo = lightmapInfos[lightmapIndex];
 			var curLightmaps = LightmapSettings.lightmaps;
 			for (var i = 0; i < curLightmaps.Length; i++)

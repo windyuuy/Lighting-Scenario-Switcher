@@ -25,11 +25,16 @@ namespace MapLighting.Editor
             }
             return true;
         }
-        
+
         [MenuItem("Tools/Lightmap/Export")]
         public static async Task Save()
         {
-            // Lightmapping.Bake();
+            // if (Lightmapping.Bake())
+            // {
+            //     Debug.LogError("烘焙场景失败");
+            //     return;
+            // }
+            
             var curScene=EditorSceneManager.GetActiveScene();
             var rootObjects=curScene.GetRootGameObjects();
             var prefabs = rootObjects.Where(obj =>
@@ -41,7 +46,7 @@ namespace MapLighting.Editor
             var scenePath = curScene.path;
             var sceneName=curScene.name;
             var defaultLightMapSavePath = Path.GetDirectoryName(scenePath).Replace("\\","/")+"/"+sceneName+"/";
-            
+
             GameObject mapPrefab;
             if (prefabs.Length == 1)
             {
@@ -51,7 +56,7 @@ namespace MapLighting.Editor
             {
                 mapPrefab = prefabs.FirstOrDefault(prefab =>
                 {
-                    return prefab.name == sceneName;
+                    return prefab.name == sceneName || prefab.name.Contains("Map");
                 });
                 if(mapPrefab==null)
                 {

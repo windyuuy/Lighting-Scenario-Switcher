@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using System.IO;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -64,24 +65,30 @@ namespace MapLighting
 		}
 
 		public LightProbes lightProbes;
+		public AssetReference lightProbesAsset;
 		public async Task Load(string saveUrl)
 		{
-			if (lightProbes==null && saveUrl != null)
+			if (lightProbes==null && saveUrl != null && lightProbesAsset!=null && lightProbesAsset.RuntimeKeyIsValid())
 			{
-				var asset=await Addressables.LoadAssetAsync<LightProbes>(saveUrl + "LightProbe.asset").Task;
-				LightmapSettings.lightProbes = asset;
+				lightProbes=await lightProbesAsset.LoadAssetAsync<LightProbes>().Task;
 			}
+			LightmapSettings.lightProbes = lightProbes;
 		}
 		
 		#if UNITY_EDITOR
 		public void Save(string saveUrl)
 		{
 			var savePath = saveUrl + "LightProbe.asset";
-			AssetDatabase.DeleteAsset(savePath);
+			if (File.Exists(savePath))
+			{
+				AssetDatabase.DeleteAsset(savePath);
+			}
 			if (LightmapSettings.lightProbes != null)
 			{
 				lightProbes = GameObject.Instantiate(LightmapSettings.lightProbes);
 				AssetDatabase.CreateAsset(lightProbes,savePath);
+				var guid = AssetDatabase.AssetPathToGUID(savePath);
+				lightProbesAsset = new AssetReference(guid);
 			}
 		}
 		#endif

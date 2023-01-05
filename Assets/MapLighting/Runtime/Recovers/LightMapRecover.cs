@@ -81,27 +81,52 @@ namespace MapLighting
 		}
 		public void Recover(BaseLightMapData baseLightMapData)
 		{
-			var newLightmaps = new LightmapData[this.lightmapInfos.Length];
-			for (int i = 0; i < newLightmaps.Length; i++)
+			LightmapSettings.lightmapsMode = this.lightmapsMode;
+			// var newLightmaps = new LightmapData[this.lightmapInfos.Length];
+			LightmapData[] newLightmaps;
+			if (this.lightmapInfos.Length <= LightmapSettings.lightmaps.Length)
+			{
+				newLightmaps = LightmapSettings.lightmaps;
+			}
+			else
+			{
+				newLightmaps = new LightmapData[this.lightmapInfos.Length];
+				LightmapSettings.lightmaps.CopyTo(newLightmaps, 0);
+				if (LightmapSettings.lightmaps.Length == 0)
+				{
+					Debug.LogError("lightmaps.Length should not be 0");
+				}
+				for (var i = LightmapSettings.lightmaps.Length; i < this.lightmapInfos.Length; i++)
+				{
+					if (LightmapSettings.lightmaps.Length == 0)
+					{
+						newLightmaps[i] = new LightmapData();
+					}
+					else
+					{
+						newLightmaps[i] = newLightmaps[0];
+					}
+				}
+			}
+			for (int i = 0; i < this.lightmapInfos.Length; i++)
 			{
 				var lightmapInfo = baseLightMapData.lightmapInfos[i];
-				var newLightmap= new LightmapData();
-				newLightmaps[i] = newLightmap;
-				newLightmap.lightmapColor = lightmapInfo.lightmap;
+				// var newLightmap= new LightmapData();
+				// newLightmaps[i] = newLightmap;
+				newLightmaps[i].lightmapColor = lightmapInfo.lightmap;
 				if (this.lightmapsMode != LightmapsMode.NonDirectional) {
 					if (lightmapInfo.lightmapDir != null)
 					{
-						newLightmap.lightmapDir = lightmapInfo.lightmapDir;
+						newLightmaps[i].lightmapDir = lightmapInfo.lightmapDir;
 					}
 
 					if (lightmapInfo.lightmapShadow != null)
 					{
-						newLightmap.shadowMask = lightmapInfo.lightmapShadow;
+						newLightmaps[i].shadowMask = lightmapInfo.lightmapShadow;
 					}
 				}
 			}
 			LightmapSettings.lightmaps = newLightmaps;
-			LightmapSettings.lightmapsMode = this.lightmapsMode;
 		}
 
 #if UNITY_EDITOR

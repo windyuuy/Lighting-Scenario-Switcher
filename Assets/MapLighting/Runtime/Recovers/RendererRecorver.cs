@@ -10,7 +10,7 @@ namespace MapLighting
 		public int realtimeLightmapIndex;
 		public Vector4 realtimeLightmapScaleOffset;
 		
-		public void Recover(MeshRenderer renderer, BaseLightMapData baseLightMapData)
+		public void Recover(Renderer renderer, BaseLightMapData baseLightMapData)
 		{
 			if (BaseLightMapData.GetLightmapIndexValid(lightmapIndex))
 			{

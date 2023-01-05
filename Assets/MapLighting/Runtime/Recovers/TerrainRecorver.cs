@@ -13,7 +13,7 @@ namespace MapLighting
 		
 		public void Recover(Terrain obj,BaseLightMapData baseLightMapData)
 		{
-			if (BaseLightMapData.GetLightmapIndexValid(obj.lightmapIndex))
+			if (BaseLightMapData.GetLightmapIndexValid(lightmapIndex))
 			{
 				obj.lightmapIndex = baseLightMapData.ValidateLightmapIndex(lightmapIndex);
 			}

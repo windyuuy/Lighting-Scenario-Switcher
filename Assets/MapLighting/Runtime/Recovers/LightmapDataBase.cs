@@ -13,6 +13,7 @@ namespace MapLighting
 		public LightProbeRecover lightProbeData;
 		public LightMapRecover lightmapData;
 		public RenderSettingsRecover renderSettingsesData;
+		public SceneRecover sceneData;
 		[NonSerialized]
 		public BaseLightMapData baseLightMapData;
 	}

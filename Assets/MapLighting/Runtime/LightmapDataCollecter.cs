@@ -52,7 +52,7 @@ namespace MapLighting
 			}).ToArray();
 
 			// 收集render信息
-			var rendererParams = GameObject.FindObjectsOfType<MeshRenderer>();
+			var rendererParams = GameObject.FindObjectsOfType<Renderer>(true);
 			var rendererDatas0 = rendererParams.Select(renderer =>
 			{
 				var rendererData = new RendererRecorver();
@@ -68,12 +68,15 @@ namespace MapLighting
 			var lightmapData0 = new LightMapRecover();
 			lightmapData0.Collect(baseLightMapData);
 
+			var sceneData0 = new SceneRecover();
+
 			this.lightDatas = lightDatas0;
 			this.lensFlareDatas = lensFlareDatas0;
 			this.terrainDatas = terrainDatas0;
 			this.rendererDatas = rendererDatas0;
 			this.lightProbeData = lightProbeData0;
 			this.lightmapData = lightmapData0;
+			this.sceneData = sceneData0;
 		}
 		#endif
 		
@@ -84,15 +87,23 @@ namespace MapLighting
 			{
 				Directory.CreateDirectory(saveDir);
 			}
-			var savePath = saveDir + "LightMapData.asset";
+			
 			var task1=lightmapData.Save(saveDir, baseLightMapData, needSaveTexture);
 			await Task.WhenAll(Enumerable.Empty<Task>()
 				.Append(task1)
 				// .Append(task2)
 			);
 			lightProbeData.Save(saveDir);
-			AssetDatabase.DeleteAsset(savePath);
-			AssetDatabase.CreateAsset(this, savePath);
+			
+			sceneData.Save(saveDir);
+			
+			var lightMapDataSavePath = saveDir + "LightMapData.asset";
+			if (File.Exists(lightMapDataSavePath))
+			{
+				AssetDatabase.DeleteAsset(lightMapDataSavePath);
+			}
+			AssetDatabase.CreateAsset(this, lightMapDataSavePath);
+
 #else
 			throw new System.Exception("save valid only for editor");
 #endif
