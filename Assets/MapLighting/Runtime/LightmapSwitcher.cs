@@ -83,13 +83,13 @@ namespace MapLighting
 
         public async Task SaveAsync()
         {
+#if UNITY_EDITOR
             var savePath = saveUrl;
             if (string.IsNullOrWhiteSpace(savePath))
             {
                 savePath = assetUrl;
             }
             savePath = fixAssetPath(savePath);
-#if UNITY_EDITOR
             var collecter = await SaveLightmapData(savePath, saveTextureToLocal);
             recover = collecter;
 #else
